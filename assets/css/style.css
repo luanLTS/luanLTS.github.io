@@ -435,8 +435,8 @@ ul, li {
     .projeto_img img {
         height: 300px;
     }
-    .content {
-        padding: 25px 10px;
+    .techs_img img {
+        width: 75px;
     }
 }
 
@@ -444,7 +444,7 @@ ul, li {
     .projeto_img img {
         height: 200px;
     }
-    .content {
-        padding: 25px 10px;
+    .techs_img img {
+        width: 50px;
     }
 }
