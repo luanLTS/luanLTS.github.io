@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
-
 :root {
-    --body : 'Source Sans Pro';
-    --title : 'Sora';
-    --fontColor : #E1E1E1;
+    --body: 'Source Sans Pro';
+    --title: 'Sora';
+    --fontColor: #E1E1E1;
     --skobeloff: #006466ff;
     --midnight-green-eagle-green: #004952ff;
     --midnight-green-eagle-green-2: #005c66ff;
@@ -24,15 +23,19 @@
 .bg-verde-1 {
     background-color: var(--midnight-green-eagle-green);
 }
+
 .bg-verde-2 {
     background-color: var(--midnight-green-eagle-green-2);
 }
+
 .bg-verde-3 {
     background-color: var(--ming);
 }
+
 .bg-verde-4 {
     background-color: var(--metallic-seaweed);
 }
+
 .bg-verde-5 {
     background-color: var(--rich-black);
 }
@@ -59,12 +62,13 @@ aside h2 {
     padding: 0;
     font-family: var(--title);
     color: var(--fontColor);
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 850;
     text-shadow: 2px 2px 5px #000;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -99,7 +103,7 @@ ul, li {
     margin: 10px 0px;
     padding: 10px;
     font-family: var(--body);
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--fontColor);
     letter-spacing: 4px;
@@ -127,7 +131,7 @@ ul, li {
 .redes_sociais i {
     color: var(--fontColor);
     margin: 10px;
-    font-size: 35px;
+    font-size: 2rem;
 }
 
 .content {
@@ -141,7 +145,7 @@ ul, li {
 .content h1 {
     color: var(--fontColor);
     font-family: var(--title);
-    font-size: 35px;
+    font-size: 2rem;
 }
 
 .content h2 {
@@ -190,7 +194,8 @@ ul, li {
 }
 
 .projetos_img img {
-    width: 375px;
+    max-width: 375px;
+    width: 100%;
     height: 190px;
     border-radius: 20px;
     margin: 30px;
@@ -204,15 +209,16 @@ ul, li {
 }
 
 .contatos_img p {
-    font-size: 15px;
+    font-size: 1rem;
     font-family: var(--title);
     color: var(--fontColor);
 }
 
 .contatos_img img {
     margin: 200px 25px;
-    width: 250px;
+    width: 15rem;
 }
+
 
 /* ! página Colegio */
 
@@ -229,7 +235,7 @@ ul, li {
 
 .sobre_proj p,
 #sobre p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--body);
     color: var(--fontColor);
     padding: 0px;
@@ -289,6 +295,7 @@ ul, li {
     transform: translate(0px, -30px);
 }
 
+
 /* ! página Colegio */
 
 
@@ -307,27 +314,35 @@ ul, li {
     border-radius: 20px;
 }
 
+
 /* ! página asilo */
 
 .height-auto {
     height: auto;
 }
 
+
 /* ! opala */
 
-#opala_mobile { 
+#opala_mobile {
     width: 300px;
 }
 
+
 /* ! opala */
 
+
 /* ! menu mobile*/
+
 .menu_mobile {
     display: none;
 }
+
 .menu_navegation_mobile {
     display: none;
 }
+
+
 /* ! menu mobile*/
 
 .techs_img img {
@@ -336,40 +351,36 @@ ul, li {
 }
 
 @media only screen and (max-width: 1280px) {
-    .menu_mobile {
+    /* .menu_mobile {
         display: flex;
         justify-content: center;
     }
     .menu_navegation_mobile {
         display: block;
-    }
-
+    } */
     aside {
         display: none;
     }
     .content {
         max-width: 100vw;
         width: 100%;
-        height: 100vh;
         margin-left: 0px;
-        padding: 25px 0px;
+        padding: 25px 10px;
         height: auto;
     }
     section {
         padding: 0px 0px;
-        margin: 0px;
+        margin: 10px 0px;
     }
-
     .contatos_img {
         display: flex;
         justify-content: center;
     }
-
     .contatos_img img {
         width: 100px;
+        padding: 20px;
         margin: 10px;
     }
-
     .techs {
         display: flex;
         justify-content: center;
@@ -378,38 +389,31 @@ ul, li {
         width: 100%;
         margin-top: 100px;
     }
-
     .techs .est_exp_img {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .techs_img {
         display: flex;
         flex-flow: row wrap;
         margin: 75px 0px;
     }
-
     .techs_img img {
         max-width: 100px;
         width: 100%;
     }
-
     .projeto_img {
         margin: 0px 0px;
     }
-    
     .projeto_img img {
         width: 80%;
         height: 400px;
     }
-
     .menu_navegation {
         max-width: 400px;
         width: 100%;
     }
-
     .menu_navegation ul {
         display: flex;
         flex-direction: column;
@@ -417,11 +421,9 @@ ul, li {
         margin: 0px;
         padding: 0px;
     }
-
     .logo img {
         width: 100px;
     }
-
     .active {
         border: 0;
     }
