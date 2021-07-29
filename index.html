@@ -2,145 +2,54 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luan | Portfólio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/img/logo1.png" type="image/x-icon">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body class="bg-verde-1">
-    <!-- menu desktop -->
-    <aside class="bg-header">
-        <header>
-            <div class="profile">
-                <h2>Luan Teixeira</h2>
-                <img src="./assets/img/foto.jpeg" alt="profile">
-            </div>
-        </header>
-        <nav>
-            <div class="menu_navegation">
-                <ul>
-                    <a href="#sobre">
-                        <li class="active">Sobre</li>
+<body>
+    <div class="geral">
+        <aside class="columnCenter">
+            <header class="columnCenter">
+                <img src="./assets/img/profile_avatar.jpg" alt="foto de perfil">
+                <h2 class="titulo">Luan Teixeira</h2>
+            </header>
+            <nav>
+                <div class="menu columnCenter">
+                    <a href="" onmouseover="ativoOver(0)" onmouseout="ativoOut(0)">
+                        <div class="menu_item">
+                            Sobre mim
+                            <div class="menu_item_ativo"></div>
+                        </div>
                     </a>
-                    <a href="#tecnologias">
-                        <li>Tecnologias</li>
+                    <a href="" onmouseover="ativoOver(1)" onmouseout="ativoOut(1)">
+                        <div class="menu_item">
+                            Projetos
+                            <div class="menu_item_ativo"></div>
+                        </div>
                     </a>
-                    <a href="#projetos">
-                        <li>Projetos</li>
+                    <a href="" onmouseover="ativoOver(2)" onmouseout="ativoOut(2)">
+                        <div class="menu_item">
+                            Tecnologia
+                            <div class="menu_item_ativo"></div>
+                        </div>
                     </a>
-                    <a href="#contato">
-                        <li>Contato</li>
+                    <a href="" onmouseover="ativoOver(3)" onmouseout="ativoOut(3)">
+                        <div class="menu_item">
+                            Contatos
+                            <div class="menu_item_ativo"></div>
+                        </div>
                     </a>
-                </ul>
-            </div>
-        </nav>
-        <footer>
-            <div class="redes_sociais">
-                <a href="https://github.com/luanLTS" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/luan-teixeira-5a55b8132/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:luanlts@outlook.com" target="_blank">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </footer>
-    </aside>
-    <!-- menu desktop -->
-
-    <!-- menu mobiles -->
-
-    <header class="menu_mobile">
-        <div class="logo">
-            <img src="./assets/img/logo_v2.png" alt="logo">
-        </div>
-    </header>
-    <nav class="menu_navegation_mobile">
-        <div class="menu_navegation">
-            <ul>
-                <a href="#sobre">
-                    <li class="active">Sobre</li>
-                </a>
-                <a href="#tecnologias">
-                    <li>Tecnologias</li>
-                </a>
-                <a href="#projetos">
-                    <li>Projetos</li>
-                </a>
-                <a href="#contato">
-                    <li>Contato</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- menu mobiles -->
-
-
-    <section class="bg-verde-1">
-        <div class="content" id="sobre">
-            <h1>Sobre Mim</h1>
-            <p>Oi, meu nome é Luan Teixeira, sou estudande no segundo semestre do curso de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia do Ipiranga. Conheci o mundo da programação em 2019, quando passei para curso técnico de Desenvolvimento
-                de Sistemas na ETEC Professor Aprígio Gonzaga, dentre dezenas de matérias que tive em toda a duração do curso a que mais me identifiquei foi Desenvolvimento Web, com ela peguei amor pelo front-End e mantenho o foco nos estudos hoje em
-                dia.
-                <br /> Adoro realizar trabalhos em equipe e passar para outras pessoas os meus conhecimentos que adquiri e venho adquirindo todos os dias.
-            </p>
-        </div>
-    </section>
-    <section class="bg-verde-3">
-        <div class="content" id="projetos">
-            <h1>Projetos</h1>
-            <div class="projetos_img">
-                <a href="./pages/augustoSilva.html"><img src="./assets/img/projetos/colegioAugustoSilva.png" alt="Colegio augusto silva"></a>
-                <a href="./pages/asiloFoco.html"><img src="./assets/img/projetos/asiloEmFoco/Imagem1.png" alt="Asilo em Foco"></a>
-                <a href="./pages/opala.html"><img src="./assets/img/projetos/opalaExercicio.png" alt="Opala"></a>
-                <a href="./pages/formulario.html"><img src="./assets/img/projetos/gitProjetoPortfolio.gif" alt="Formulário"></a>
-                <a href="./pages/tributo.html"><img src="./assets/img/projetos/tributo.png" alt="Tributo"></a>
-            </div>
-        </div>
-    </section>
-    <section class="bg-verde-2">
-        <div class="content" id="tecnologias">
-            <h1>Tecnologias</h1>
-            <div class="techs effect_flutuante">
-                <div class="est_exp">
-                    <h2>Estudando/Experiência</h2>
-                    <div class="est_exp_img">
-                        <img src="./assets/img/tecnologias/html5.png" alt="html5">
-                        <img src="./assets/img/tecnologias/css-3.png" alt="css3">
-                    </div>
                 </div>
-                <div class="est_int">
-                    <h2>Estudando/Interesse</h2>
-                    <div class="est_exp_img">
-                        <img src="./assets/img/tecnologias/js.png" alt="js">
-                        <img src="./assets/img/tecnologias/React.png" alt="react">
-                    </div>
-                </div>
-            </div>
-            <div class="techs_basic">
-                <h2>Básico</h2>
-                <p>PHP, MySQL, Git e GitHub.</p>
-            </div>
+            </nav>
+        </aside>
+        <div class="conteudo">
+            <iframe src="conteudo.html" frameborder="0"></iframe>
         </div>
-    </section>
-    <section class="bg-verde-4">
-        <div class="content" id="contato">
-            <h1>Contato</h1>
-            <div class="contatos_img effect_flutuante">
-                <a href="https://github.com/luanLTS" target="_blank"><img src="./assets/img/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/luan-teixeira-5a55b8132/" target="_blank"><img src="./assets/img/linkedin.png" alt="linkedin"></a>
-                <a href="mailto:luanlts@outlook.com" target="_blank"><img src="./assets/img/email.png" alt="email"></a>
-            </div>
-        </div>
-    </section>
-
+    </div>
     <script src="./assets/js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/6e5f52c476.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
