@@ -68,10 +68,20 @@ iframe {
     align-items: center;
 }
 
+.sectionFlex {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
     color: var(--fontColor);
     font-family: var(--text);
+    cursor: pointer;
 }
 
 
@@ -81,7 +91,6 @@ aside {
     width: 20%;
     height: 100%;
     background-color: var(--midnight-green-eagle-green);
-    display: none;
 }
 
 header img {
@@ -130,15 +139,6 @@ nav .menu .menu_item_ativo {
 
 /* ? Sobre mim */
 
-section .sobre_mim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 10px 30px;
-}
-
 .titulo {
     font-size: 2rem;
     font-family: var(--title);
@@ -158,12 +158,7 @@ section .sobre_mim {
 /* ? Projetos */
 
 section .projetos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-top: 50px;
-    height: 100vh;
 }
 
 section .projetos .banners {
@@ -190,15 +185,6 @@ section .projetos .banners img:hover {
 
 /* ? Tecnologias */
 
-section .tecnologias {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 30px;
-    height: 100vh;
-}
-
 section .tecnologias .icones_area {
     display: flex;
     flex: 1;
@@ -210,11 +196,13 @@ section .tecnologias .icones_area div {
 
 section .tecnologias .icones_area img {
     max-width: 200px;
+    width: 100%;
     border-radius: 30px;
     transition: all .8s;
 }
 
-section .tecnologias .icones_area img:hover {
+section .tecnologias .icones_area img:hover,
+.techs_img img:hover {
     transform: scale(1.2) translateY(-50px);
 }
 
@@ -224,6 +212,63 @@ section .tecnologias .icones_area img:hover {
 
 /* ? contatos */
 
+section .contato .icones {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    width: 700px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    font-family: var(--text)
+}
 
+section .contato .icones i {
+    font-size: 5rem;
+    transition: all .5s;
+}
+
+section .contato .icones i:hover{
+    transform: scale(1.5)
+    rotate(-10deg);
+}
 
 /* ? contatos */
+
+/* ? Colegio */
+
+.projeto_img img{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.techs_img {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.techs_img img {
+    max-width: 150px;
+    width: 100%;
+    border-radius: 20px;
+    transition: all .6s;
+}
+
+/* ? Colegio */
+@media screen and (max-width: 900px) {
+    .sectionFlex {
+        height: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 720px) {
+
+}
+
+@media screen and (max-width: 500px) {
+
+}

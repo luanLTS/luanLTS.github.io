@@ -1,0 +1,145 @@
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fontTitulo : "JetBrains Mono";
+    --fontFrase: "Lobster"
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    max-width: 1040px;
+    margin: auto;
+    background-color: rgba(100, 100, 100, 10);
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: var(--fontTitulo);
+    font-weight: 1000;
+}
+
+.profile {
+    padding: 40px 0px;
+}
+
+.profileImage {
+    border: 5px solid #FFF;
+    padding: 10px;
+    box-shadow: 10px 10px 20px;
+}
+
+.profileImage img {
+    border: 1px solid #AAA;
+}
+
+.profileImage p {
+    padding: 5px 0px 0px 0px;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--fontTitulo);
+    font-style: italic;
+}
+
+.description p {
+    font-family: var(--fontTitulo);
+    font-size: 15px;
+}
+
+.description h2 {
+    font-family: var(--fontFrase);
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.obras {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.lineCenter {
+    background-color: black;
+    width: 5px;
+    height: auto;
+}
+
+.obras .right {
+    text-align: left;
+}
+
+.obras .left {
+    text-align: right;
+}
+
+.obras .left,
+.obras .right {
+    width: 517px;
+    padding: 10px;
+}
+
+.widgetL {
+    padding-bottom: 50px;
+}
+
+.widgetR {
+    padding-top: 50px;
+}
+
+.wgYearL {
+    border-right: 2px solid #000;
+    padding: 5px;
+    margin: 3px;
+    font-size: 15px;
+    font-family: var(--fontTitulo);
+}
+.wgYearR {
+    border-left: 2px solid #000;
+    padding: 5px;
+    margin: 3px;
+    font-size: 15px;
+    font-family: var(--fontTitulo);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(80, 80, 80, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+}
+footer a, a:active {
+    color: #DDD;
+}
+footer p {
+    margin: 7px;
+    font-size: 16px;
+    color: #DDD;
+    font-family: var(--fontTitulo);
+}
