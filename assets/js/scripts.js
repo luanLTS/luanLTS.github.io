@@ -34,11 +34,11 @@ const ativoOut = (id) => {
 // let doc = document.documentElement
 // let contentHeight = document.querySelector('.content').clientHeight / 2
 // let li = document.getElementsByTagName('li')
-// // let contentLen = document.querySelectorAll('.content').length
+// let contentLen = document.querySelectorAll('.content').length
 // console.log(li)
 
 // function myTestFunction() {
-//     // doc.scrollTop >= 200
+//     doc.scrollTop >= 200
 //     let scroll = doc.scrollTop
 //     if ( scroll < contentHeight ) {
 //         console.log('Sobre Mim')

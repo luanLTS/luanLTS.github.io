@@ -188,6 +188,7 @@ section .projetos .banners img:hover {
 section .tecnologias .icones_area {
     display: flex;
     flex: 1;
+    text-align: center;
 }
 
 section .tecnologias .icones_area div {
@@ -257,18 +258,36 @@ section .contato .icones i:hover{
 }
 
 /* ? Colegio */
-@media screen and (max-width: 900px) {
+
+/* ? Tablet - Ipad */
+@media only screen and (max-width: 1024px) {
     .sectionFlex {
         height: auto;
+    }
+    .columnCenter {
+        display: none;
+    }
+    .conteudo {
+        flex: 1;
     }
 }
 
 
 
-@media screen and (max-width: 720px) {
-
-}
-
-@media screen and (max-width: 500px) {
-
+@media only screen and (max-width: 768px) {
+    .icones_area,
+    .icones {
+        flex-direction: column;
+    }
+    section .contato .icones {
+        width: auto;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .conteudo {
+        flex: 1;
+    }
+    section .projetos .banners {
+        padding: 0px;
+    }
 }
