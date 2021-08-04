@@ -15,15 +15,15 @@
     <div class="geral">
         <aside class="columnCenter">
             <header class="columnCenter">
-                <img src="./assets/img/profile_avatar.jpg" alt="foto de perfil">
+                <img src="./assets/img/foto.jpeg" alt="foto de perfil">
                 <h2 class="titulo">Luan Teixeira</h2>
             </header>
             <nav>
                 <div class="menu columnCenter">
-                    <a onmouseover="ativoOver(0)" onmouseout="ativoOut(0)" onclick="redirecionamento(sobreMim)">
+                    <a onmouseover="ativoOver(0)" onmouseout="ativoOut(0)">
                         <div class="menu_item">
                             Sobre mim
-                            <div class="menu_item_ativo"></div>
+                            <div class="menu_item_ativo" style="width: 100%;"></div>
                         </div>
                     </a>
                     <a onmouseover="ativoOver(1)" onmouseout="ativoOut(1)">
@@ -48,10 +48,91 @@
             </nav>
         </aside>
         <div class="conteudo">
-            <iframe src="conteudo.html" frameborder="0"></iframe>
+            <!-- <iframe src="conteudo.html" frameborder="0"></iframe> -->
+            <section class="bg-verde-1" id="sobre">
+                <div class="sobre_mim sectionFlex">
+                    <h2 class="titulo">SOBRE MIM</h2>
+                    <p class="texto">
+                        Oi, meu nome é Luan Teixeira, sou estudande no segundo semestre do curso de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia do Ipiranga. Conheci o mundo da programação em 2019, quando passei para curso técnico de Desenvolvimento de Sistemas
+                        na ETEC Professor Aprígio Gonzaga, dentre dezenas de matérias que tive em toda a duração do curso a que mais me identifiquei foi Desenvolvimento Web, com ela peguei amor pelo front-End e mantenho o foco nos estudos hoje em dia.
+                        <br /> Adoro realizar trabalhos em equipe e passar para outras pessoas os meus conhecimentos que adquiri e venho adquirindo todos os dias.
+                    </p>
+                </div>
+            </section>
+            <section class="bg-verde-2" id="projetos">
+                <div class="projetos sectionFlex">
+                    <h2 class="titulo">PROJETOS</h2>
+                    <div class="banners">
+                        <a href="./pages/augustoSilva.html">
+                            <img src="./assets/img/projetos/colegioBanner.png" alt="Colegio">
+                        </a>
+                        <a href="./pages/asiloFoco.html">
+                            <img src="./assets/img/projetos/asiloEmFoco/Imagem1.png" alt="Asilo em foco">
+                        </a>
+                        <a href="./pages/formulario.html">
+                            <img src="./assets/img/projetos/formsBanner.gif" alt="Formulário">
+                        </a>
+                        <a href="./pages/opala.html">
+                            <img src="./assets/img/projetos/opalaBanner.png" alt="Leilão de Opala">
+                        </a>
+                        <a href="./pages/tributo.html">
+                            <img src="./assets/img/projetos/tributoBanner.png" alt="Página de tributo">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-verde-3" id="tecnologias">
+                <div class="tecnologias sectionFlex">
+                    <h2 class="titulo">TECNOLOGIAS</h2>
+                    <div class="icones_area">
+                        <div class="tech_exp">
+                            <h2 class="titulo">Estudando / Experiência</h2>
+                            <img src="./assets/img/tecnologias/html5.png" alt="HTML">
+                            <img src="./assets/img/tecnologias/css-3.png" alt="CSS">
+                        </div>
+                        <div class="tech_estudando">
+                            <h2 class="titulo">Estudando / Interesse</h2>
+                            <img src="./assets/img/tecnologias/js.png" alt="Javascript">
+                            <img src="./assets/img/tecnologias/React.png" alt="ReactJS">
+                        </div>
+                    </div>
+                    <h2 class="titulo">Básico</h2>
+                    <p class="texto">Git & GitHub, PHP e MySQL</p>
+                </div>
+            </section>
+            <section class="bg-verde-4" id="contatos">
+                <div class="contato sectionFlex">
+                    <h2 class="titulo">CONTATO</h2>
+                    <div class="icones">
+                        <a href="https://github.com/luanLTS" target="_blank">
+                            <div class="icone">
+                                <i class="fab fa-github"></i>
+                                <h4>GitHub</h4>
+                            </div>
+                        </a>
+                        <a href="mailto:luanlts@outlook.com">
+                            <div class="icone">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <h4>E-mail</h4>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luan-teixeira-5a55b8132/" target="_blank">
+                            <div class="icone">
+                                <i class="fab fa-linkedin"></i>
+                                <h4>LinkdIn</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <a href="#">
+                <i class="fas fa-arrow-alt-circle-up" id="top"></i>
+            </a>
         </div>
     </div>
     <script src="./assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/6e5f52c476.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
