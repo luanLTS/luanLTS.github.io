@@ -2,8 +2,12 @@ let sections = document.querySelectorAll('section')
 let doc = document.documentElement
 let menuAtivo = document.querySelectorAll(".menu_item_ativo")
 let secH = sections[0].clientHeight
+let prog = document.querySelector("progress");
+
+prog.max = doc.scrollHeight - doc.clientHeight;
 
 window.addEventListener('scroll', () => {
+    prog.value = doc.scrollTop;
     let top = doc.scrollTop
     if (top < secH * 0.6) {
         menuAtivo[0].style.width = `100%`
